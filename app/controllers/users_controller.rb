@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     redirect_to root_url and return unless FILINL
   end
 
+
   def create
     @user = User.new(user_params)
     if @user.save
